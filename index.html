@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Sunnat's Finds | Top Viral Amazon Deals & Must-Haves</title>
+  <meta name="description" content="Shop viral TikTok Amazon finds, kitchen essentials, fashion & gadgets verified with direct Amazon Prime links." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090b10;
+      --card-bg: rgba(22, 27, 34, 0.85);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --card-hover: rgba(30, 38, 48, 0.95);
+      --accent: #ff9900;
+      --accent-hover: #ffaa22;
+      --accent-glow: rgba(255, 153, 0, 0.25);
+      --text: #f0f3f6;
+      --text-muted: #8b949e;
+      --badge-bg: rgba(255, 153, 0, 0.12);
+      --badge-color: #ffb347;
+      --prime-blue: #00a8e8;
+      --prime-bg: rgba(0, 168, 232, 0.12);
+      --success: #3fb950;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: radial-gradient(circle at top, #141b26 0%, #090b10 100%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 16px 80px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 580px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* PROFILE HEADER */
+    .profile-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 24px 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .profile-card::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at center, rgba(255, 153, 0, 0.06), transparent 60%);
+      pointer-events: none;
+    }
+
+    .avatar-wrap {
+      position: relative;
+      margin-bottom: 14px;
+    }
+
+    .avatar {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #1f2937, #111827);
+      border: 3px solid var(--accent);
+      padding: 4px;
+      object-fit: cover;
+      box-shadow: 0 0 24px var(--accent-glow);
+    }
+
+    .verified-badge {
+      position: absolute;
+      bottom: 4px;
+      right: 4px;
+      background: #0095f6;
+      color: #fff;
+      border-radius: 50%;
+      width: 22px;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 800;
+      border: 2px solid var(--bg);
+    }
+
+    .profile-name {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .profile-handle {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-top: 2px;
+      margin-bottom: 12px;
+    }
+
+    .bio-text {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #c9d1d9;
+      max-width: 440px;
+    }
+
+    .trust-badges {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+
+    .trust-pill {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 100px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: #8b949e;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    /* SEARCH & FILTER */
+    .controls {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .search-box {
+      width: 100%;
+      padding: 14px 18px;
+      border-radius: 16px;
+      border: 1px solid var(--card-border);
+      background: var(--card-bg);
+      color: #fff;
+      font-size: 15px;
+      outline: none;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .search-box:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 16px var(--accent-glow);
+    }
+
+    .filter-pills {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+    }
+    .filter-pills::-webkit-scrollbar { display: none; }
+
+    .filter-btn {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      padding: 8px 16px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 600;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .filter-btn.active {
+      background: var(--accent);
+      color: #000;
+      border-color: var(--accent);
+      box-shadow: 0 0 14px var(--accent-glow);
+    }
+
+    /* PRODUCT CARD */
+    .product-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .product-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+
+    .product-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255, 153, 0, 0.4);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5), 0 0 20px var(--accent-glow);
+    }
+
+    .img-wrap {
+      width: 100%;
+      height: 220px;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      padding: 16px;
+    }
+
+    .img-wrap img {
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover .img-wrap img {
+      transform: scale(1.05);
+    }
+
+    .badge-top {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: #111827;
+      color: #ffb347;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 100px;
+      border: 1px solid rgba(255, 179, 71, 0.3);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    .prime-badge {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: #0073bb;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 8px;
+      border-radius: 6px;
+      letter-spacing: 0.5px;
+    }
+
+    .card-body {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .category-label {
+      font-size: 12px;
+      color: var(--accent);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .product-title {
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.35;
+      color: #fff;
+    }
+
+    .rating-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+    }
+
+    .stars {
+      color: #ffb800;
+      letter-spacing: 1px;
+    }
+
+    .reviews-count {
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+
+    .features-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin: 4px 0 8px;
+    }
+
+    .features-list li {
+      font-size: 12.5px;
+      color: #8b949e;
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+      line-height: 1.4;
+    }
+
+    .features-list li::before {
+      content: "•";
+      color: var(--accent);
+      font-size: 16px;
+      line-height: 1;
+    }
+
+    .price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .price {
+      font-size: 22px;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .orig-price {
+      font-size: 14px;
+      color: #6e7681;
+      text-decoration: line-through;
+    }
+
+    .discount-pill {
+      font-size: 11px;
+      font-weight: 700;
+      background: rgba(63, 185, 80, 0.15);
+      color: var(--success);
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+
+    /* BUY BUTTON */
+    .btn-buy {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: linear-gradient(180deg, #ff9900 0%, #e68a00 100%);
+      color: #111;
+      font-size: 15px;
+      font-weight: 800;
+      padding: 14px 20px;
+      border-radius: 14px;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(255, 153, 0, 0.35);
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-buy:hover {
+      background: linear-gradient(180deg, #ffa71a 0%, #f59300 100%);
+      box-shadow: 0 6px 24px rgba(255, 153, 0, 0.5);
+      transform: translateY(-1px);
+    }
+
+    .btn-buy:active {
+      transform: scale(0.98);
+    }
+
+    .amazon-arrow {
+      font-size: 16px;
+      transition: transform 0.2s ease;
+    }
+
+    .btn-buy:hover .amazon-arrow {
+      transform: translate(2px, -2px);
+    }
+
+    /* FOOTER */
+    .footer {
+      margin-top: 30px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: #6e7681;
+      font-size: 11.5px;
+      line-height: 1.5;
+    }
+
+    .footer a {
+      color: #8b949e;
+      text-decoration: none;
+    }
+
+    .amazon-disclosure {
+      padding: 12px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- PROFILE HEADER -->
+    <div class="profile-card">
+      <div class="avatar-wrap">
+        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=250&q=80" alt="Avatar" class="avatar" />
+        <span class="verified-badge">✓</span>
+      </div>
+      <h1 class="profile-name">Sunnat's Finds 🛒</h1>
+      <p class="profile-handle">@sunnatirgashev</p>
+      <p class="bio-text">
+        Viral Amazon Must-Haves, Home & Kitchen Gadgets, and Smart Life Hacks. Verified authentic deals with direct Prime 2-day delivery! 👇
+      </p>
+
+      <div class="trust-badges">
+        <span class="trust-pill">⚡ Fast Prime Delivery</span>
+        <span class="trust-pill">⭐ 4.5+ Star Rated</span>
+        <span class="trust-pill">🛡️ Secure Amazon Checkout</span>
+      </div>
+    </div>
+
+    <!-- CONTROLS: SEARCH & CATEGORIES -->
+    <div class="controls">
+      <input type="text" id="searchInput" class="search-box" placeholder="🔍 Search viral products (e.g. coffee, kids)..." />
+      <div class="filter-pills">
+        <button class="filter-btn active" data-cat="all">✨ All Finds</button>
+        <button class="filter-btn" data-cat="kitchen">☕ Kitchen</button>
+        <button class="filter-btn" data-cat="kids">🎒 Kids & School</button>
+        <button class="filter-btn" data-cat="fashion">🧥 Men & Women</button>
+      </div>
+    </div>
+
+    <!-- PRODUCT LIST -->
+    <div id="productList" class="product-list">
+      <!-- Dynamic cards rendered by JS -->
+    </div>
+
+    <!-- FOOTER & DISCLOSURE -->
+    <footer class="footer">
+      <div class="amazon-disclosure">
+        <strong>Affiliate Disclosure:</strong> As an Amazon Associate, I earn from qualifying purchases at no extra cost to you. All prices and availability are subject to change by Amazon.
+      </div>
+      <p>© 2026 Sunnat's Viral Finds. All rights reserved.</p>
+    </footer>
+
+  </div>
+
+  <script>
+    const products = [{"id": "ninja-dualbrew", "title": "Ninja DualBrew Pro Specialty 12-Cup Coffee Maker", "category": "kitchen", "category_name": "☕ Kitchen & Coffee", "badge": "🔥 Viral TikTok Find", "rating": 4.7, "reviews": "16,420", "price": "$199.99", "original_price": "$229.99", "prime": true, "image": "images/ninja.jpg", "affiliate_url": "https://amzn.to/3SU48pE", "features": ["Compatible with K-Cup pods & ground coffee", "Built-in fold-away frother for silky lattes", "4 brew styles: Classic, Rich, Over Ice, Specialty", "60-oz multi-position water reservoir"]}, {"id": "bentgo-kids", "title": "Bentgo Kids Prints Leak-Proof 5-Compartment Bento Lunch Box", "category": "kids", "category_name": "🎒 Kids & Back-to-School", "badge": "#1 Amazon Best Seller", "rating": 4.8, "reviews": "62,890", "price": "$27.99", "original_price": "$39.99", "prime": true, "image": "images/bentgo.jpg", "affiliate_url": "https://amzn.to/4xMlnJ2", "features": ["Leak-proof technology keeps meals fresh", "Drop-proof design with durable rubber edges", "5 practical compartments for balanced meals", "BPA-free, dishwasher & microwave safe"]}, {"id": "mens-outdoor-set", "title": "4-in-1 Men's Waterproof Ski Jacket & Rain Gear Set", "category": "fashion", "category_name": "🧥 Men's Fashion & Outdoor", "badge": "Trending Autumn/Winter", "rating": 4.6, "reviews": "4,750", "price": "$69.99", "original_price": "$89.99", "prime": true, "image": "images/mens_set.jpg", "affiliate_url": "https://amzn.to/4yoj5j2", "features": ["Water repellent coating & warm thermal fleece", "Detachable storm hood with adjustable drawcord", "Heavy-duty windproof cuffs and multi-pockets", "Ideal for rain, hiking, camping and daily wear"]}, {"id": "lebop-mini-dress", "title": "LE BOP Canon Cutout Cotton Poplin Summer Mini Dress", "category": "fashion", "category_name": "👗 Women's Viral Fashion", "badge": "TikTok Viral Trend", "rating": 4.9, "reviews": "1,280", "price": "$148.00", "original_price": "", "prime": true, "image": "images/dress.jpg", "affiliate_url": "https://amzn.to/3UHafye", "features": ["Premium 100% structured cotton poplin", "Flattering side cutout waist & puffed sleeves", "Invisible back zipper with tiered flare skirt", "Perfect for brunch, dates, events & vacations"]}, {"id": "dual-basket-air-fryer", "title": "12-Quart Dual Basket Digital Air Fryer with Smart Finish", "category": "kitchen", "category_name": "☕ Kitchen Must-Haves", "badge": "Customer Choice", "rating": 4.7, "reviews": "9,840", "price": "$119.99", "original_price": "$159.99", "prime": true, "image": "images/airfryer.jpg", "affiliate_url": "https://amzn.to/4x3ENaR", "features": ["2 independent cooking zones for double speed", "Match Cook & Smart Finish sync cooking times", "Wide temperature range (105°F - 450°F)", "XL family capacity feeds up to 8 people"]}];
+
+    const listEl = document.getElementById('productList');
+    const searchInput = document.getElementById('searchInput');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+
+    let currentCategory = 'all';
+    let searchQuery = '';
+
+    function renderProducts() {
+      listEl.innerHTML = '';
+
+      const filtered = products.filter(p => {
+        const matchesCategory = currentCategory === 'all' || p.category === currentCategory;
+        const matchesSearch = p.title.toLowerCase().includes(searchQuery) ||
+                              p.category_name.toLowerCase().includes(searchQuery) ||
+                              p.features.some(f => f.toLowerCase().includes(searchQuery));
+        return matchesCategory && matchesSearch;
+      });
+
+      if (filtered.length === 0) {
+        listEl.innerHTML = `
+          <div style="text-align: center; padding: 40px 20px; color: #8b949e; background: var(--card-bg); border-radius: 20px; border: 1px solid var(--card-border);">
+            <div style="font-size: 36px; margin-bottom: 8px;">🔍</div>
+            <p>No products found matching "<strong>${searchQuery}</strong>"</p>
+          </div>
+        `;
+        return;
+      }
+
+      filtered.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'product-card';
+
+        const featuresHtml = p.features.map(f => `<li>${f}</li>`).join('');
+        const discountHtml = p.original_price ? `<span class="orig-price">${p.original_price}</span><span class="discount-pill">Deal</span>` : '';
+
+        card.innerHTML = `
+          <div class="img-wrap">
+            <span class="badge-top">${p.badge}</span>
+            <span class="prime-badge">prime</span>
+            <img src="${p.image}" alt="${p.title}" loading="eager" />
+          </div>
+          <div class="card-body">
+            <span class="category-label">${p.category_name}</span>
+            <h2 class="product-title">${p.title}</h2>
+            
+            <div class="rating-row">
+              <span class="stars">★★★★★</span>
+              <span style="font-weight: 700; color: #fff;">${p.rating}</span>
+              <span class="reviews-count">(${p.reviews} reviews)</span>
+            </div>
+
+            <ul class="features-list">
+              ${featuresHtml}
+            </ul>
+
+            <div class="price-row">
+              <span class="price">${p.price}</span>
+              ${discountHtml}
+            </div>
+
+            <a href="${p.affiliate_url}" target="_blank" rel="noopener sponsored" class="btn-buy">
+              <span>View & Buy on Amazon</span>
+              <span class="amazon-arrow">↗</span>
+            </a>
+          </div>
+        `;
+        listEl.appendChild(card);
+      });
+    }
+
+    searchInput.addEventListener('input', (e) => {
+      searchQuery = e.target.value.toLowerCase().trim();
+      renderProducts();
+    });
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentCategory = btn.dataset.cat;
+        renderProducts();
+      });
+    });
+
+    renderProducts();
+  </script>
+</body>
+</html>
