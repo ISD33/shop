@@ -3,27 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Sunnat's Finds | Top Viral Amazon Deals & Must-Haves</title>
-  <meta name="description" content="Shop viral TikTok Amazon finds, kitchen essentials, fashion & gadgets verified with direct Amazon Prime links." />
+  <title>Sunnat's Finds | Viral Amazon Must-Haves & Deals</title>
+  <meta name="description" content="Curated viral Amazon products, gadgets, home & fashion finds from TikTok. Shop with authentic Amazon Prime links." />
+  
+  <!-- Modern Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --bg: #090b10;
-      --card-bg: rgba(22, 27, 34, 0.85);
-      --card-border: rgba(255, 255, 255, 0.08);
-      --card-hover: rgba(30, 38, 48, 0.95);
+      --bg-main: #0a0c10;
+      --bg-surface: #12161f;
+      --bg-card: rgba(20, 26, 36, 0.75);
+      --bg-card-hover: rgba(28, 36, 50, 0.95);
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-hover: rgba(255, 153, 0, 0.4);
       --accent: #ff9900;
-      --accent-hover: #ffaa22;
-      --accent-glow: rgba(255, 153, 0, 0.25);
-      --text: #f0f3f6;
-      --text-muted: #8b949e;
-      --badge-bg: rgba(255, 153, 0, 0.12);
-      --badge-color: #ffb347;
-      --prime-blue: #00a8e8;
-      --prime-bg: rgba(0, 168, 232, 0.12);
-      --success: #3fb950;
+      --accent-grad: linear-gradient(135deg, #ff9900 0%, #ff5500 100%);
+      --accent-glow: rgba(255, 153, 0, 0.35);
+      --text-main: #f3f5f8;
+      --text-muted: #8c96a5;
+      --prime-blue: #00a8e1;
+      --badge-deal: #10b981;
+      --badge-hot: #ef4444;
+      --badge-bestseller: #f59e0b;
     }
 
     * {
@@ -35,473 +39,690 @@
 
     body {
       font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: radial-gradient(circle at top, #141b26 0%, #090b10 100%);
-      color: var(--text);
+      background-color: var(--bg-main);
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(255, 153, 0, 0.12) 0%, transparent 60%),
+        radial-gradient(circle at 10% 40%, rgba(0, 168, 225, 0.06) 0%, transparent 50%);
+      background-attachment: fixed;
+      color: var(--text-main);
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 24px 16px 80px;
+      padding: 16px 14px 100px;
     }
 
     .container {
       width: 100%;
-      max-width: 580px;
+      max-width: 540px;
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 18px;
     }
 
-    /* PROFILE HEADER */
+    /* TOP ANNOUNCEMENT BAR */
+    .announcement-bar {
+      background: linear-gradient(90deg, rgba(255,153,0,0.15) 0%, rgba(0,168,225,0.15) 100%);
+      border: 1px solid rgba(255,153,0,0.25);
+      border-radius: 100px;
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #ffd899;
+      animation: pulseGlow 3s infinite alternate;
+    }
+
+    @keyframes pulseGlow {
+      0% { box-shadow: 0 0 10px rgba(255,153,0,0.1); }
+      100% { box-shadow: 0 0 20px rgba(255,153,0,0.3); }
+    }
+
+    /* CREATOR PROFILE CARD */
     .profile-card {
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 24px;
-      padding: 24px 20px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 28px;
+      padding: 26px 20px 22px;
       text-align: center;
+      backdrop-filter: blur(20px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.5);
       display: flex;
       flex-direction: column;
       align-items: center;
-      backdrop-filter: blur(16px);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
       position: relative;
       overflow: hidden;
     }
 
-    .profile-card::before {
+    .profile-card::after {
       content: "";
       position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle at center, rgba(255, 153, 0, 0.06), transparent 60%);
-      pointer-events: none;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--accent-grad);
     }
 
-    .avatar-wrap {
+    .avatar-wrapper {
       position: relative;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
 
-    .avatar {
-      width: 88px;
-      height: 88px;
+    .avatar-img {
+      width: 92px;
+      height: 92px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #1f2937, #111827);
-      border: 3px solid var(--accent);
-      padding: 4px;
+      border: 3px solid #ff9900;
+      padding: 3px;
+      background: #111;
       object-fit: cover;
-      box-shadow: 0 0 24px var(--accent-glow);
+      box-shadow: 0 0 30px var(--accent-glow);
     }
 
-    .verified-badge {
+    .verified-icon {
       position: absolute;
       bottom: 4px;
       right: 4px;
-      background: #0095f6;
+      background: #1d9bf0;
       color: #fff;
       border-radius: 50%;
-      width: 22px;
-      height: 22px;
+      width: 24px;
+      height: 24px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 12px;
-      font-weight: 800;
-      border: 2px solid var(--bg);
+      font-size: 13px;
+      font-weight: 900;
+      border: 2px solid var(--bg-main);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
     }
 
-    .profile-name {
-      font-size: 22px;
-      font-weight: 800;
-      letter-spacing: -0.5px;
+    .creator-name {
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: -0.6px;
       display: flex;
       align-items: center;
       gap: 6px;
+      color: #ffffff;
     }
 
-    .profile-handle {
+    .creator-handle {
       font-size: 14px;
       color: var(--text-muted);
+      font-weight: 600;
       margin-top: 2px;
       margin-bottom: 12px;
     }
 
-    .bio-text {
+    .creator-bio {
       font-size: 14px;
       line-height: 1.5;
-      color: #c9d1d9;
+      color: #cbd5e1;
       max-width: 440px;
     }
 
-    .trust-badges {
+    /* SOCIAL LINKS CHIPS */
+    .social-row {
+      display: flex;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .social-chip {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--border-subtle);
+      border-radius: 100px;
+      padding: 6px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #cbd5e1;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .social-chip:hover {
+      background: rgba(255,255,255,0.12);
+      transform: translateY(-1px);
+    }
+
+    /* TRUST METRICS PILLS */
+    .metrics-row {
       display: flex;
       justify-content: center;
-      gap: 12px;
+      gap: 8px;
       margin-top: 16px;
       flex-wrap: wrap;
     }
 
-    .trust-pill {
+    .metric-tag {
       font-size: 11px;
-      font-weight: 600;
+      font-weight: 700;
       padding: 5px 12px;
       border-radius: 100px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      color: #8b949e;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #94a3b8;
       display: flex;
       align-items: center;
       gap: 5px;
     }
 
-    /* SEARCH & FILTER */
-    .controls {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
+    /* SEARCH BAR */
+    .search-wrapper {
+      position: relative;
+      width: 100%;
     }
 
-    .search-box {
+    .search-input {
       width: 100%;
-      padding: 14px 18px;
-      border-radius: 16px;
-      border: 1px solid var(--card-border);
-      background: var(--card-bg);
+      padding: 14px 18px 14px 44px;
+      border-radius: 18px;
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-card);
       color: #fff;
       font-size: 15px;
+      font-weight: 500;
       outline: none;
-      transition: all 0.2s ease;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(16px);
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
     }
 
-    .search-box:focus {
+    .search-input:focus {
       border-color: var(--accent);
-      box-shadow: 0 0 16px var(--accent-glow);
+      box-shadow: 0 0 20px var(--accent-glow);
     }
 
-    .filter-pills {
+    .search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #94a3b8;
+      font-size: 16px;
+      pointer-events: none;
+    }
+
+    /* CATEGORIES SLIDER */
+    .category-slider {
       display: flex;
       gap: 8px;
       overflow-x: auto;
-      padding-bottom: 4px;
+      padding-bottom: 2px;
       scrollbar-width: none;
     }
-    .filter-pills::-webkit-scrollbar { display: none; }
+    .category-slider::-webkit-scrollbar { display: none; }
 
-    .filter-btn {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid var(--card-border);
-      color: var(--text-muted);
-      padding: 8px 16px;
+    .cat-btn {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border-subtle);
+      color: #94a3b8;
+      padding: 10px 18px;
       border-radius: 100px;
       font-size: 13px;
-      font-weight: 600;
+      font-weight: 700;
       white-space: nowrap;
       cursor: pointer;
-      transition: all 0.2s;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    .filter-btn.active {
-      background: var(--accent);
-      color: #000;
-      border-color: var(--accent);
-      box-shadow: 0 0 14px var(--accent-glow);
+    .cat-btn.active {
+      background: var(--accent-grad);
+      color: #0a0c10;
+      border-color: transparent;
+      box-shadow: 0 4px 16px var(--accent-glow);
+      transform: scale(1.02);
     }
 
-    /* PRODUCT CARD */
-    .product-list {
+    /* SECTION TITLE */
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 4px;
+      margin-top: 4px;
+    }
+
+    .section-title {
+      font-size: 15px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #94a3b8;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .count-badge {
+      background: rgba(255,153,0,0.15);
+      color: #ff9900;
+      padding: 2px 8px;
+      border-radius: 100px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    /* PRODUCT CARDS */
+    .product-feed {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 20px;
     }
 
-    .product-card {
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 20px;
+    .pro-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 24px;
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-      backdrop-filter: blur(12px);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       position: relative;
     }
 
-    .product-card:hover {
-      transform: translateY(-2px);
-      border-color: rgba(255, 153, 0, 0.4);
-      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5), 0 0 20px var(--accent-glow);
+    .pro-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--border-hover);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.5), 0 0 25px var(--accent-glow);
     }
 
-    .img-wrap {
+    /* CARD IMAGE */
+    .card-media {
       width: 100%;
-      height: 220px;
+      height: 250px;
       background: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
       overflow: hidden;
-      padding: 16px;
     }
 
-    .img-wrap img {
-      max-width: 90%;
-      max-height: 90%;
+    .card-media img {
+      max-width: 92%;
+      max-height: 92%;
       object-fit: contain;
-      transition: transform 0.3s ease;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    .product-card:hover .img-wrap img {
-      transform: scale(1.05);
+    .pro-card:hover .card-media img {
+      transform: scale(1.06);
     }
 
-    .badge-top {
+    .card-badges-top {
       position: absolute;
       top: 12px;
       left: 12px;
-      background: #111827;
-      color: #ffb347;
-      font-size: 11px;
-      font-weight: 700;
-      padding: 4px 10px;
-      border-radius: 100px;
-      border: 1px solid rgba(255, 179, 71, 0.3);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      right: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      pointer-events: none;
     }
 
-    .prime-badge {
-      position: absolute;
-      top: 12px;
-      right: 12px;
-      background: #0073bb;
-      color: #fff;
+    .pill-badge {
       font-size: 11px;
       font-weight: 800;
-      padding: 4px 8px;
-      border-radius: 6px;
-      letter-spacing: 0.5px;
+      padding: 5px 12px;
+      border-radius: 100px;
+      letter-spacing: 0.4px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
     }
 
-    .card-body {
-      padding: 18px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .category-label {
-      font-size: 12px;
-      color: var(--accent);
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .product-title {
-      font-size: 17px;
-      font-weight: 700;
-      line-height: 1.35;
+    .pill-badge.hot {
+      background: #ef4444;
       color: #fff;
     }
 
-    .rating-row {
+    .pill-badge.bestseller {
+      background: #f59e0b;
+      color: #111;
+    }
+
+    .pill-badge.trending {
+      background: #8b5cf6;
+      color: #fff;
+    }
+
+    .pill-badge.viral {
+      background: #ec4899;
+      color: #fff;
+    }
+
+    .prime-logo-badge {
+      background: #002f3e;
+      border: 1px solid rgba(0,168,225,0.4);
+      color: #00a8e1;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 4px 10px;
+      border-radius: 8px;
+      letter-spacing: 0.6px;
+      text-transform: lowercase;
+    }
+
+    /* CARD CONTENT */
+    .card-content {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .product-cat {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+
+    .product-name {
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1.35;
+      color: #ffffff;
+      letter-spacing: -0.3px;
+    }
+
+    /* SOCIAL PROOF ROW */
+    .social-proof {
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
       font-size: 13px;
     }
 
-    .stars {
-      color: #ffb800;
+    .stars-group {
+      color: #f59e0b;
+      font-size: 14px;
       letter-spacing: 1px;
     }
 
-    .reviews-count {
-      color: var(--text-muted);
-      font-size: 12px;
+    .rating-val {
+      font-weight: 800;
+      color: #ffffff;
     }
 
-    .features-list {
+    .reviews-count {
+      color: #64748b;
+      font-weight: 600;
+    }
+
+    /* HIGHLIGHT BULLETS */
+    .bullets-box {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 4px;
-      margin: 4px 0 8px;
+      gap: 5px;
+      margin: 4px 0 6px;
     }
 
-    .features-list li {
-      font-size: 12.5px;
-      color: #8b949e;
+    .bullets-box li {
+      font-size: 13px;
+      color: #94a3b8;
       display: flex;
       align-items: flex-start;
-      gap: 6px;
+      gap: 8px;
       line-height: 1.4;
     }
 
-    .features-list li::before {
-      content: "•";
-      color: var(--accent);
-      font-size: 16px;
-      line-height: 1;
+    .bullets-box li::before {
+      content: "✓";
+      color: #10b981;
+      font-weight: 900;
+      font-size: 12px;
+      margin-top: 1px;
     }
 
-    .price-row {
+    /* PRICING */
+    .pricing-wrap {
       display: flex;
       align-items: baseline;
-      gap: 8px;
+      gap: 10px;
       margin-top: 4px;
     }
 
-    .price {
-      font-size: 22px;
-      font-weight: 800;
-      color: #fff;
+    .current-price {
+      font-size: 26px;
+      font-weight: 900;
+      color: #ffffff;
+      letter-spacing: -0.5px;
     }
 
-    .orig-price {
-      font-size: 14px;
-      color: #6e7681;
+    .strike-price {
+      font-size: 15px;
+      color: #64748b;
       text-decoration: line-through;
+      font-weight: 600;
     }
 
-    .discount-pill {
-      font-size: 11px;
-      font-weight: 700;
-      background: rgba(63, 185, 80, 0.15);
-      color: var(--success);
-      padding: 2px 8px;
+    .save-pill {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      padding: 3px 8px;
       border-radius: 6px;
+      font-size: 11px;
+      font-weight: 800;
     }
 
-    /* BUY BUTTON */
-    .btn-buy {
-      margin-top: 10px;
+    /* ACTION BUTTONS */
+    .action-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .btn-amazon {
+      background: linear-gradient(180deg, #ff9900 0%, #e68a00 100%);
+      color: #0a0c10;
+      font-size: 15px;
+      font-weight: 800;
+      padding: 15px 20px;
+      border-radius: 16px;
+      text-decoration: none;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 8px;
-      background: linear-gradient(180deg, #ff9900 0%, #e68a00 100%);
-      color: #111;
-      font-size: 15px;
-      font-weight: 800;
-      padding: 14px 20px;
-      border-radius: 14px;
-      text-decoration: none;
-      box-shadow: 0 4px 16px rgba(255, 153, 0, 0.35);
-      transition: all 0.2s ease;
-      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(255, 153, 0, 0.4);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
       border: none;
+      cursor: pointer;
     }
 
-    .btn-buy:hover {
-      background: linear-gradient(180deg, #ffa71a 0%, #f59300 100%);
-      box-shadow: 0 6px 24px rgba(255, 153, 0, 0.5);
-      transform: translateY(-1px);
+    .btn-amazon:hover {
+      background: linear-gradient(180deg, #ffaa22 0%, #f59300 100%);
+      box-shadow: 0 8px 28px rgba(255, 153, 0, 0.6);
+      transform: translateY(-2px);
     }
 
-    .btn-buy:active {
+    .btn-amazon:active {
       transform: scale(0.98);
     }
 
-    .amazon-arrow {
-      font-size: 16px;
-      transition: transform 0.2s ease;
+    .amazon-icon {
+      font-size: 17px;
     }
 
-    .btn-buy:hover .amazon-arrow {
-      transform: translate(2px, -2px);
+    .btn-share {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--border-subtle);
+      color: #cbd5e1;
+      width: 52px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-share:hover {
+      background: rgba(255,255,255,0.12);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    /* TOAST NOTIFICATION */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      background: #10b981;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 100px;
+      font-size: 14px;
+      font-weight: 700;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+      z-index: 999;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     /* FOOTER */
-    .footer {
-      margin-top: 30px;
+    .site-footer {
+      margin-top: 36px;
       text-align: center;
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      color: #6e7681;
-      font-size: 11.5px;
+      gap: 12px;
+      color: #64748b;
+      font-size: 12px;
       line-height: 1.5;
     }
 
-    .footer a {
-      color: #8b949e;
-      text-decoration: none;
-    }
-
-    .amazon-disclosure {
-      padding: 12px;
-      border-radius: 12px;
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(255, 255, 255, 0.04);
+    .legal-box {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 16px;
+      padding: 14px 18px;
     }
   </style>
 </head>
 <body>
 
   <div class="container">
-    
-    <!-- PROFILE HEADER -->
-    <div class="profile-card">
-      <div class="avatar-wrap">
-        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=250&q=80" alt="Avatar" class="avatar" />
-        <span class="verified-badge">✓</span>
+
+    <!-- TOP FLASH NOTICE -->
+    <div class="announcement-bar">
+      <span>🔥</span>
+      <span>Daily Amazon Price Drops & Verified Prime Deals</span>
+    </div>
+
+    <!-- PRO CREATOR CARD -->
+    <header class="profile-card">
+      <div class="avatar-wrapper">
+        <img src="images/ninja.jpg" alt="Sunnat" class="avatar-img" />
+        <span class="verified-icon">✓</span>
       </div>
-      <h1 class="profile-name">Sunnat's Finds 🛒</h1>
-      <p class="profile-handle">@sunnatirgashev</p>
-      <p class="bio-text">
-        Viral Amazon Must-Haves, Home & Kitchen Gadgets, and Smart Life Hacks. Verified authentic deals with direct Prime 2-day delivery! 👇
+      
+      <h1 class="creator-name">Sunnat's Finds 🛒</h1>
+      <p class="creator-handle">@sunnatirgashev</p>
+      
+      <p class="creator-bio">
+        Curating the most viral Amazon products, clever kitchen gadgets, and trending fashion from TikTok. Fast Prime 2-Day Delivery on all orders! 👇
       </p>
 
-      <div class="trust-badges">
-        <span class="trust-pill">⚡ Fast Prime Delivery</span>
-        <span class="trust-pill">⭐ 4.5+ Star Rated</span>
-        <span class="trust-pill">🛡️ Secure Amazon Checkout</span>
+      <div class="social-row">
+        <a href="https://www.tiktok.com/@sunnatirgashev5" target="_blank" rel="noopener" class="social-chip">
+          <span>🎵</span>
+          <span>TikTok Profile</span>
+        </a>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener" class="social-chip">
+          <span>▶️</span>
+          <span>YouTube Shorts</span>
+        </a>
       </div>
-    </div>
 
-    <!-- CONTROLS: SEARCH & CATEGORIES -->
-    <div class="controls">
-      <input type="text" id="searchInput" class="search-box" placeholder="🔍 Search viral products (e.g. coffee, kids)..." />
-      <div class="filter-pills">
-        <button class="filter-btn active" data-cat="all">✨ All Finds</button>
-        <button class="filter-btn" data-cat="kitchen">☕ Kitchen</button>
-        <button class="filter-btn" data-cat="kids">🎒 Kids & School</button>
-        <button class="filter-btn" data-cat="fashion">🧥 Men & Women</button>
+      <div class="metrics-row">
+        <span class="metric-tag">⚡ Fast Prime Shipping</span>
+        <span class="metric-tag">⭐ 4.5+ Star Rated</span>
+        <span class="metric-tag">🛡️ Official Amazon Checkout</span>
       </div>
+    </header>
+
+    <!-- SEARCH BAR -->
+    <div class="search-wrapper">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" class="search-input" placeholder="Search viral products (e.g. coffee, kids)..." />
     </div>
 
-    <!-- PRODUCT LIST -->
-    <div id="productList" class="product-list">
-      <!-- Dynamic cards rendered by JS -->
+    <!-- CATEGORIES SLIDER -->
+    <div class="category-slider">
+      <button class="cat-btn active" data-cat="all">✨ All Finds</button>
+      <button class="cat-btn" data-cat="kitchen">☕ Kitchen</button>
+      <button class="cat-btn" data-cat="kids">🎒 Kids & School</button>
+      <button class="cat-btn" data-cat="fashion">🧥 Men & Women</button>
     </div>
 
-    <!-- FOOTER & DISCLOSURE -->
-    <footer class="footer">
-      <div class="amazon-disclosure">
-        <strong>Affiliate Disclosure:</strong> As an Amazon Associate, I earn from qualifying purchases at no extra cost to you. All prices and availability are subject to change by Amazon.
+    <!-- SECTION HEADER -->
+    <div class="section-header">
+      <span class="section-title">
+        <span>Curated Deals</span>
+      </span>
+      <span id="productCount" class="count-badge">5 Deals</span>
+    </div>
+
+    <!-- PRODUCT FEED -->
+    <main id="productFeed" class="product-feed">
+      <!-- Injected by JavaScript -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="legal-box">
+        <strong>Amazon Associates Disclosure:</strong> As an Amazon Associate, I earn from qualifying purchases at no additional cost to you. Product prices and availability are accurate as of the date/time indicated and are subject to change by Amazon.
       </div>
       <p>© 2026 Sunnat's Viral Finds. All rights reserved.</p>
     </footer>
 
   </div>
 
-  <script>
-    const products = [{"id": "ninja-dualbrew", "title": "Ninja DualBrew Pro Specialty 12-Cup Coffee Maker", "category": "kitchen", "category_name": "☕ Kitchen & Coffee", "badge": "🔥 Viral TikTok Find", "rating": 4.7, "reviews": "16,420", "price": "$199.99", "original_price": "$229.99", "prime": true, "image": "images/ninja.jpg", "affiliate_url": "https://amzn.to/3SU48pE", "features": ["Compatible with K-Cup pods & ground coffee", "Built-in fold-away frother for silky lattes", "4 brew styles: Classic, Rich, Over Ice, Specialty", "60-oz multi-position water reservoir"]}, {"id": "bentgo-kids", "title": "Bentgo Kids Prints Leak-Proof 5-Compartment Bento Lunch Box", "category": "kids", "category_name": "🎒 Kids & Back-to-School", "badge": "#1 Amazon Best Seller", "rating": 4.8, "reviews": "62,890", "price": "$27.99", "original_price": "$39.99", "prime": true, "image": "images/bentgo.jpg", "affiliate_url": "https://amzn.to/4xMlnJ2", "features": ["Leak-proof technology keeps meals fresh", "Drop-proof design with durable rubber edges", "5 practical compartments for balanced meals", "BPA-free, dishwasher & microwave safe"]}, {"id": "mens-outdoor-set", "title": "4-in-1 Men's Waterproof Ski Jacket & Rain Gear Set", "category": "fashion", "category_name": "🧥 Men's Fashion & Outdoor", "badge": "Trending Autumn/Winter", "rating": 4.6, "reviews": "4,750", "price": "$69.99", "original_price": "$89.99", "prime": true, "image": "images/mens_set.jpg", "affiliate_url": "https://amzn.to/4yoj5j2", "features": ["Water repellent coating & warm thermal fleece", "Detachable storm hood with adjustable drawcord", "Heavy-duty windproof cuffs and multi-pockets", "Ideal for rain, hiking, camping and daily wear"]}, {"id": "lebop-mini-dress", "title": "LE BOP Canon Cutout Cotton Poplin Summer Mini Dress", "category": "fashion", "category_name": "👗 Women's Viral Fashion", "badge": "TikTok Viral Trend", "rating": 4.9, "reviews": "1,280", "price": "$148.00", "original_price": "", "prime": true, "image": "images/dress.jpg", "affiliate_url": "https://amzn.to/3UHafye", "features": ["Premium 100% structured cotton poplin", "Flattering side cutout waist & puffed sleeves", "Invisible back zipper with tiered flare skirt", "Perfect for brunch, dates, events & vacations"]}, {"id": "dual-basket-air-fryer", "title": "12-Quart Dual Basket Digital Air Fryer with Smart Finish", "category": "kitchen", "category_name": "☕ Kitchen Must-Haves", "badge": "Customer Choice", "rating": 4.7, "reviews": "9,840", "price": "$119.99", "original_price": "$159.99", "prime": true, "image": "images/airfryer.jpg", "affiliate_url": "https://amzn.to/4x3ENaR", "features": ["2 independent cooking zones for double speed", "Match Cook & Smart Finish sync cooking times", "Wide temperature range (105°F - 450°F)", "XL family capacity feeds up to 8 people"]}];
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="toast">✓ Link copied to clipboard!</div>
 
-    const listEl = document.getElementById('productList');
+  <script>
+    const products = [{"id": "ninja-dualbrew", "title": "Ninja DualBrew Pro Specialty 12-Cup Coffee System", "category": "kitchen", "category_name": "☕ Kitchen & Coffee", "badge": "🔥 VIRAL TIKTOK FIND", "badge_type": "hot", "rating": 4.7, "reviews": "16,420", "price": "$199.99", "original_price": "$229.99", "discount": "13% OFF", "is_featured": true, "prime": true, "image": "images/ninja.jpg", "affiliate_url": "https://amzn.to/3SU48pE", "features": ["Compatible with K-Cup pods & ground coffee", "Built-in fold-away frother for silky lattes & cappuccinos", "4 brew styles: Classic, Rich, Over Ice, Specialty", "60-oz multi-position water reservoir"]}, {"id": "bentgo-kids", "title": "Bentgo Kids Prints Leak-Proof 5-Compartment Bento Lunch Box", "category": "kids", "category_name": "🎒 Kids & Back-to-School", "badge": "🏆 #1 AMAZON BEST SELLER", "badge_type": "bestseller", "rating": 4.8, "reviews": "62,890", "price": "$27.99", "original_price": "$39.99", "discount": "30% OFF", "is_featured": false, "prime": true, "image": "images/bentgo.jpg", "affiliate_url": "https://amzn.to/4xMlnJ2", "features": ["Leak-proof technology keeps food & snacks fresh", "Drop-proof design with durable rubber-coated edges", "5 practical compartments for nutritious portions", "BPA-free, dishwasher & microwave safe"]}, {"id": "mens-outdoor-set", "title": "4-in-1 Men's Waterproof Winter Ski Jacket & Rain Gear Set", "category": "fashion", "category_name": "🧥 Men's Fashion & Outdoor", "badge": "⚡ TRENDING VIRAL", "badge_type": "trending", "rating": 4.6, "reviews": "4,750", "price": "$69.99", "original_price": "$89.99", "discount": "22% OFF", "is_featured": false, "prime": true, "image": "images/mens_set.jpg", "affiliate_url": "https://amzn.to/4yoj5j2", "features": ["Waterproof repellent shell & ultra-warm thermal fleece", "Detachable storm hood with adjustable drawcord", "Heavy-duty windproof cuffs with utility cargo pockets", "Ideal for rain, hiking, camping and daily commute"]}, {"id": "lebop-mini-dress", "title": "LE BOP Canon Cutout Cotton Poplin Summer Mini Dress", "category": "fashion", "category_name": "👗 Women's Viral Fashion", "badge": "✨ TIKTOK MUST-HAVE", "badge_type": "viral", "rating": 4.9, "reviews": "1,280", "price": "$148.00", "original_price": "", "discount": "", "is_featured": false, "prime": true, "image": "images/dress.jpg", "affiliate_url": "https://amzn.to/3UHafye", "features": ["Premium 100% structured breathable cotton poplin", "Flattering side cutout waist & puffed statement sleeves", "Invisible back zipper closure with tiered flare skirt", "Perfect for brunch, dates, summer events & vacations"]}, {"id": "dual-basket-air-fryer", "title": "12-Quart Dual Basket Digital Air Fryer with Smart Finish", "category": "kitchen", "category_name": "☕ Kitchen Must-Haves", "badge": "⭐ HIGHLY RATED", "badge_type": "bestseller", "rating": 4.7, "reviews": "9,840", "price": "$119.99", "original_price": "$159.99", "discount": "25% OFF", "is_featured": false, "prime": true, "image": "images/airfryer.jpg", "affiliate_url": "https://amzn.to/4x3ENaR", "features": ["2 independent cooking baskets for double the cooking speed", "Match Cook & Smart Finish sync cooking times automatically", "Wide temperature range (105°F - 450°F) with 6-in-1 presets", "Extra-large family size capacity feeds up to 8 people"]}];
+
+    const feedEl = document.getElementById('productFeed');
     const searchInput = document.getElementById('searchInput');
-    const filterBtns = document.querySelectorAll('.filter-btn');
+    const catBtns = document.querySelectorAll('.cat-btn');
+    const countBadge = document.getElementById('productCount');
+    const toast = document.getElementById('toast');
 
     let currentCategory = 'all';
     let searchQuery = '';
 
-    function renderProducts() {
-      listEl.innerHTML = '';
+    function showToast(text) {
+      toast.textContent = text;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2500);
+    }
+
+    function renderFeed() {
+      feedEl.innerHTML = '';
 
       const filtered = products.filter(p => {
         const matchesCategory = currentCategory === 'all' || p.category === currentCategory;
@@ -511,73 +732,96 @@
         return matchesCategory && matchesSearch;
       });
 
+      countBadge.textContent = `${filtered.length} Deals`;
+
       if (filtered.length === 0) {
-        listEl.innerHTML = `
-          <div style="text-align: center; padding: 40px 20px; color: #8b949e; background: var(--card-bg); border-radius: 20px; border: 1px solid var(--card-border);">
-            <div style="font-size: 36px; margin-bottom: 8px;">🔍</div>
-            <p>No products found matching "<strong>${searchQuery}</strong>"</p>
+        feedEl.innerHTML = `
+          <div style="text-align:center; padding: 50px 20px; color: #64748b; background: var(--bg-card); border-radius: 24px; border: 1px solid var(--border-subtle);">
+            <div style="font-size: 40px; margin-bottom: 12px;">🔍</div>
+            <h3 style="color: #fff; margin-bottom: 6px;">No products found</h3>
+            <p>Try searching for another keyword like "coffee", "lunchbox", or "jacket".</p>
           </div>
         `;
         return;
       }
 
       filtered.forEach(p => {
-        const card = document.createElement('div');
-        card.className = 'product-card';
+        const card = document.createElement('article');
+        card.className = 'pro-card';
 
-        const featuresHtml = p.features.map(f => `<li>${f}</li>`).join('');
-        const discountHtml = p.original_price ? `<span class="orig-price">${p.original_price}</span><span class="discount-pill">Deal</span>` : '';
+        const bulletsHtml = p.features.map(f => `<li>${f}</li>`).join('');
+        const strikeHtml = p.original_price ? `<span class="strike-price">${p.original_price}</span>` : '';
+        const discountHtml = p.discount ? `<span class="save-pill">${p.discount}</span>` : '';
 
         card.innerHTML = `
-          <div class="img-wrap">
-            <span class="badge-top">${p.badge}</span>
-            <span class="prime-badge">prime</span>
+          <div class="card-media">
+            <div class="card-badges-top">
+              <span class="pill-badge ${p.badge_type}">${p.badge}</span>
+              <span class="prime-logo-badge">prime</span>
+            </div>
             <img src="${p.image}" alt="${p.title}" loading="eager" />
           </div>
-          <div class="card-body">
-            <span class="category-label">${p.category_name}</span>
-            <h2 class="product-title">${p.title}</h2>
-            
-            <div class="rating-row">
-              <span class="stars">★★★★★</span>
-              <span style="font-weight: 700; color: #fff;">${p.rating}</span>
-              <span class="reviews-count">(${p.reviews} reviews)</span>
+
+          <div class="card-content">
+            <span class="product-cat">${p.category_name}</span>
+            <h2 class="product-name">${p.title}</h2>
+
+            <div class="social-proof">
+              <span class="stars-group">★★★★★</span>
+              <span class="rating-val">${p.rating}</span>
+              <span class="reviews-count">(${p.reviews} verified reviews)</span>
             </div>
 
-            <ul class="features-list">
-              ${featuresHtml}
+            <ul class="bullets-box">
+              ${bulletsHtml}
             </ul>
 
-            <div class="price-row">
-              <span class="price">${p.price}</span>
+            <div class="pricing-wrap">
+              <span class="current-price">${p.price}</span>
+              ${strikeHtml}
               ${discountHtml}
             </div>
 
-            <a href="${p.affiliate_url}" target="_blank" rel="noopener sponsored" class="btn-buy">
-              <span>View & Buy on Amazon</span>
-              <span class="amazon-arrow">↗</span>
-            </a>
+            <div class="action-row">
+              <a href="${p.affiliate_url}" target="_blank" rel="noopener sponsored" class="btn-amazon">
+                <span class="amazon-icon">🛒</span>
+                <span>Shop Now on Amazon</span>
+              </a>
+              <button class="btn-share" data-url="${p.affiliate_url}" title="Copy direct link">
+                🔗
+              </button>
+            </div>
           </div>
         `;
-        listEl.appendChild(card);
+        feedEl.appendChild(card);
+      });
+
+      // Attach share copy events
+      document.querySelectorAll('.btn-share').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const url = btn.dataset.url;
+          navigator.clipboard.writeText(url).then(() => {
+            showToast('✓ Amazon link copied to clipboard!');
+          });
+        });
       });
     }
 
     searchInput.addEventListener('input', (e) => {
       searchQuery = e.target.value.toLowerCase().trim();
-      renderProducts();
+      renderFeed();
     });
 
-    filterBtns.forEach(btn => {
+    catBtns.forEach(btn => {
       btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
+        catBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         currentCategory = btn.dataset.cat;
-        renderProducts();
+        renderFeed();
       });
     });
 
-    renderProducts();
+    renderFeed();
   </script>
 </body>
 </html>
