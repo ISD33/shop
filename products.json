@@ -1,20 +1,23 @@
 [
   {
     "id": "ninja-dualbrew",
-    "title": "Ninja DualBrew Pro Specialty 12-Cup Coffee Maker",
+    "title": "Ninja DualBrew Pro Specialty 12-Cup Coffee System",
     "category": "kitchen",
     "category_name": "☕ Kitchen & Coffee",
-    "badge": "🔥 Viral TikTok Find",
+    "badge": "🔥 VIRAL TIKTOK FIND",
+    "badge_type": "hot",
     "rating": 4.7,
     "reviews": "16,420",
     "price": "$199.99",
     "original_price": "$229.99",
+    "discount": "13% OFF",
+    "is_featured": true,
     "prime": true,
     "image": "images/ninja.jpg",
     "affiliate_url": "https://amzn.to/3SU48pE",
     "features": [
       "Compatible with K-Cup pods & ground coffee",
-      "Built-in fold-away frother for silky lattes",
+      "Built-in fold-away frother for silky lattes & cappuccinos",
       "4 brew styles: Classic, Rich, Over Ice, Specialty",
       "60-oz multi-position water reservoir"
     ]
@@ -24,39 +27,45 @@
     "title": "Bentgo Kids Prints Leak-Proof 5-Compartment Bento Lunch Box",
     "category": "kids",
     "category_name": "🎒 Kids & Back-to-School",
-    "badge": "#1 Amazon Best Seller",
+    "badge": "🏆 #1 AMAZON BEST SELLER",
+    "badge_type": "bestseller",
     "rating": 4.8,
     "reviews": "62,890",
     "price": "$27.99",
     "original_price": "$39.99",
+    "discount": "30% OFF",
+    "is_featured": false,
     "prime": true,
     "image": "images/bentgo.jpg",
     "affiliate_url": "https://amzn.to/4xMlnJ2",
     "features": [
-      "Leak-proof technology keeps meals fresh",
-      "Drop-proof design with durable rubber edges",
-      "5 practical compartments for balanced meals",
+      "Leak-proof technology keeps food & snacks fresh",
+      "Drop-proof design with durable rubber-coated edges",
+      "5 practical compartments for nutritious portions",
       "BPA-free, dishwasher & microwave safe"
     ]
   },
   {
     "id": "mens-outdoor-set",
-    "title": "4-in-1 Men's Waterproof Ski Jacket & Rain Gear Set",
+    "title": "4-in-1 Men's Waterproof Winter Ski Jacket & Rain Gear Set",
     "category": "fashion",
     "category_name": "🧥 Men's Fashion & Outdoor",
-    "badge": "Trending Autumn/Winter",
+    "badge": "⚡ TRENDING VIRAL",
+    "badge_type": "trending",
     "rating": 4.6,
     "reviews": "4,750",
     "price": "$69.99",
     "original_price": "$89.99",
+    "discount": "22% OFF",
+    "is_featured": false,
     "prime": true,
     "image": "images/mens_set.jpg",
     "affiliate_url": "https://amzn.to/4yoj5j2",
     "features": [
-      "Water repellent coating & warm thermal fleece",
+      "Waterproof repellent shell & ultra-warm thermal fleece",
       "Detachable storm hood with adjustable drawcord",
-      "Heavy-duty windproof cuffs and multi-pockets",
-      "Ideal for rain, hiking, camping and daily wear"
+      "Heavy-duty windproof cuffs with utility cargo pockets",
+      "Ideal for rain, hiking, camping and daily commute"
     ]
   },
   {
@@ -64,19 +73,22 @@
     "title": "LE BOP Canon Cutout Cotton Poplin Summer Mini Dress",
     "category": "fashion",
     "category_name": "👗 Women's Viral Fashion",
-    "badge": "TikTok Viral Trend",
+    "badge": "✨ TIKTOK MUST-HAVE",
+    "badge_type": "viral",
     "rating": 4.9,
     "reviews": "1,280",
     "price": "$148.00",
     "original_price": "",
+    "discount": "",
+    "is_featured": false,
     "prime": true,
     "image": "images/dress.jpg",
     "affiliate_url": "https://amzn.to/3UHafye",
     "features": [
-      "Premium 100% structured cotton poplin",
-      "Flattering side cutout waist & puffed sleeves",
-      "Invisible back zipper with tiered flare skirt",
-      "Perfect for brunch, dates, events & vacations"
+      "Premium 100% structured breathable cotton poplin",
+      "Flattering side cutout waist & puffed statement sleeves",
+      "Invisible back zipper closure with tiered flare skirt",
+      "Perfect for brunch, dates, summer events & vacations"
     ]
   },
   {
@@ -84,19 +96,22 @@
     "title": "12-Quart Dual Basket Digital Air Fryer with Smart Finish",
     "category": "kitchen",
     "category_name": "☕ Kitchen Must-Haves",
-    "badge": "Customer Choice",
+    "badge": "⭐ HIGHLY RATED",
+    "badge_type": "bestseller",
     "rating": 4.7,
     "reviews": "9,840",
     "price": "$119.99",
     "original_price": "$159.99",
+    "discount": "25% OFF",
+    "is_featured": false,
     "prime": true,
     "image": "images/airfryer.jpg",
     "affiliate_url": "https://amzn.to/4x3ENaR",
     "features": [
-      "2 independent cooking zones for double speed",
-      "Match Cook & Smart Finish sync cooking times",
-      "Wide temperature range (105°F - 450°F)",
-      "XL family capacity feeds up to 8 people"
+      "2 independent cooking baskets for double the cooking speed",
+      "Match Cook & Smart Finish sync cooking times automatically",
+      "Wide temperature range (105°F - 450°F) with 6-in-1 presets",
+      "Extra-large family size capacity feeds up to 8 people"
     ]
   }
 ]
