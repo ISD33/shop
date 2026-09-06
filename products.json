@@ -92,26 +92,26 @@
     ]
   },
   {
-    "id": "dual-basket-air-fryer",
-    "title": "12-Quart Dual Basket Digital Air Fryer with Smart Finish",
+    "id": "nuwave-brio-airfryer",
+    "title": "Nuwave Brio 15.5Qt Air Fryer Rotisserie Oven, 50°-425°F Controls",
     "category": "kitchen",
-    "category_name": "☕ Kitchen Must-Haves",
-    "badge": "⭐ HIGHLY RATED",
-    "badge_type": "bestseller",
-    "rating": 4.7,
-    "reviews": "9,840",
-    "price": "$119.99",
-    "original_price": "$159.99",
-    "discount": "25% OFF",
+    "category_name": "☕ Kitchen & Cooking",
+    "badge": "🔥 VIRAL AIR FRYER OVEN",
+    "badge_type": "hot",
+    "rating": 4.6,
+    "reviews": "18,920",
+    "price": "$149.99",
+    "original_price": "$189.99",
+    "discount": "21% OFF",
     "is_featured": false,
     "prime": true,
     "image": "images/airfryer.jpg",
-    "affiliate_url": "https://amzn.to/4x3ENaR",
+    "affiliate_url": "https://amzn.to/4zZXpLI",
     "features": [
-      "2 independent cooking baskets for double the cooking speed",
-      "Match Cook & Smart Finish sync cooking times automatically",
-      "Wide temperature range (105°F - 450°F) with 6-in-1 presets",
-      "Extra-large family size capacity feeds up to 8 people"
+      "15.5-Qt XL Capacity fits whole 5-lb chicken & 8-inch pizza",
+      "50°F to 425°F precision temp with 360° rapid convection",
+      "Integrated digital smart thermometer probe for juicy results",
+      "Rotisserie basket, skewer rack & stainless steel trays included"
     ]
   }
 ]
