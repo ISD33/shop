@@ -113,5 +113,51 @@
       "Integrated digital smart thermometer probe for juicy results",
       "Rotisserie basket, skewer rack & stainless steel trays included"
     ]
+  },
+  {
+    "id": "ninja-flip-oven",
+    "title": "Ninja SP151 Flip Toaster Oven & Air Fryer (8-in-1 Space Saver)",
+    "category": "kitchen",
+    "category_name": "☕ Kitchen & Cooking",
+    "badge": "🔥 #1 VIRAL 1.5K+ VIEWS",
+    "badge_type": "hot",
+    "rating": 4.7,
+    "reviews": "24,510",
+    "price": "$179.99",
+    "original_price": "$219.99",
+    "discount": "18% OFF",
+    "is_featured": false,
+    "prime": true,
+    "image": "images/ninja_flip.jpg",
+    "affiliate_url": "https://amzn.to/4xb3yCi",
+    "features": [
+      "8-in-1: Air Fry, Air Roast, Air Broil, Bake, Bagel, Toast, Dehydrate & Keep Warm",
+      "Reclaim counter space: Flips up and away against your backsplash",
+      "Up to 75% less fat than traditional deep frying methods",
+      "60-second preheat and fast cooking for family meals"
+    ]
+  },
+  {
+    "id": "carote-cookware-set",
+    "title": "CAROTE 21-Piece Nonstick Cookware Set with Detachable Handles",
+    "category": "kitchen",
+    "category_name": "☕ Kitchen & Cooking",
+    "badge": "✨ TOP VIRAL HIT",
+    "badge_type": "viral",
+    "rating": 4.8,
+    "reviews": "14,350",
+    "price": "$119.99",
+    "original_price": "$149.99",
+    "discount": "20% OFF",
+    "is_featured": false,
+    "prime": true,
+    "image": "images/carote.jpg",
+    "affiliate_url": "https://amzn.to/4gO4F4I",
+    "features": [
+      "Removable click-on handle for compact nesting and 70% space saving",
+      "Granite ultra-durable nonstick coating, 100% PFOA & toxin free",
+      "Oven safe, dishwasher safe, and fridge storage with included silicone lids",
+      "Works seamlessly on induction, gas, electric, ceramic & halogen stoves"
+    ]
   }
 ]
