@@ -159,5 +159,28 @@
       "Oven safe, dishwasher safe, and fridge storage with included silicone lids",
       "Works seamlessly on induction, gas, electric, ceramic & halogen stoves"
     ]
+  },
+  {
+    "id": "4drc-v32-rc-plane",
+    "title": "4DRC V32 Foam RC Stunt Airplane Fighter Jet with LED Lights",
+    "category": "aviation",
+    "category_name": "✈️ RC & Aviation Gadgets",
+    "badge": "🔥 VIRAL TIKTOK HIT",
+    "badge_type": "hot",
+    "rating": 4.6,
+    "reviews": "3,840",
+    "price": "$39.99",
+    "original_price": "$49.99",
+    "discount": "20% OFF",
+    "is_featured": true,
+    "prime": true,
+    "image": "images/rc_plane.jpg",
+    "affiliate_url": "https://amzn.to/46b4Py4",
+    "features": [
+      "One-key 360° stunt flip & auto-hovering aerobatic rolls",
+      "Brilliant multicolor LED lighting for night flights",
+      "Ultra-durable, crash-resistant EPP foam body",
+      "2.4GHz remote control with 4 ducted safety propellers"
+    ]
   }
 ]
