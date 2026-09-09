@@ -182,5 +182,28 @@
       "Ultra-durable, crash-resistant EPP foam body",
       "2.4GHz remote control with 4 ducted safety propellers"
     ]
+  },
+  {
+    "id": "ninja-crispi-glass",
+    "title": "Ninja Crispi DualZone Glass Countertop Air Fryer (Bone)",
+    "category": "kitchen",
+    "category_name": "☕ Kitchen & Cooking",
+    "badge": "🔥 NEW 2026 VIRAL HIT",
+    "badge_type": "hot",
+    "rating": 4.8,
+    "reviews": "4,920",
+    "price": "$179.99",
+    "original_price": "$199.99",
+    "discount": "10% OFF",
+    "is_featured": true,
+    "prime": true,
+    "image": "images/ninja_crispi.jpg",
+    "affiliate_url": "https://amzn.to/4xFnmyw",
+    "features": [
+      "DualZone technology: cook 2 separate meals at different times & temps",
+      "Clear-view non-toxic borosilicate glass cooking vessels",
+      "Containers go straight from air fryer to dinner table to fridge",
+      "Smart finish syncs both baskets so everything finishes hot together"
+    ]
   }
 ]
