@@ -205,5 +205,28 @@
       "Containers go straight from air fryer to dinner table to fridge",
       "Smart finish syncs both baskets so everything finishes hot together"
     ]
+  },
+  {
+    "id": "dog-poop-trashcan",
+    "title": "2.6 Gal Odor-Proof Dog Poop & Waste Trash Can with Lid (Matte Black)",
+    "category": "pets",
+    "category_name": "🐶 Pets & Home",
+    "badge": "🐾 PET OWNER MUST-HAVE",
+    "badge_type": "bestseller",
+    "rating": 4.7,
+    "reviews": "2,480",
+    "price": "$28.99",
+    "original_price": "$34.99",
+    "discount": "17% OFF",
+    "is_featured": false,
+    "prime": true,
+    "image": "images/dog_trashcan.jpg",
+    "affiliate_url": "https://amzn.to/4xFnCxu",
+    "features": [
+      "Odor-blocking seal keeps patio, backyard & house smelling fresh",
+      "Hands-free foot pedal lid for hygienic touchless waste disposal",
+      "Removable inner bucket with bag-securing hole for effortless emptying",
+      "Weather-resistant powder-coated matte black finish that pets can't open"
+    ]
   }
 ]
