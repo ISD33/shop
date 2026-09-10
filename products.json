@@ -228,5 +228,28 @@
       "Removable inner bucket with bag-securing hole for effortless emptying",
       "Weather-resistant powder-coated matte black finish that pets can't open"
     ]
+  },
+  {
+    "id": "dog-water-dispenser",
+    "title": "2.4 Gallon Gravity Dog & Cat Water Dispenser with 304 Stainless Steel Bowl",
+    "category": "pets",
+    "category_name": "🐶 Pets & Home",
+    "badge": "💧 #1 VIRAL PET FIND",
+    "badge_type": "hot",
+    "rating": 4.8,
+    "reviews": "5,310",
+    "price": "$32.99",
+    "original_price": "$39.99",
+    "discount": "18% OFF",
+    "is_featured": true,
+    "prime": true,
+    "image": "images/dog_water_dispenser.jpg",
+    "affiliate_url": "https://amzn.to/4iWfO5R",
+    "features": [
+      "2.4-Gallon extra large gravity reservoir ensures days of continuous fresh water",
+      "Food-grade 304 stainless steel bowl prevents chin acne & bacterial buildup",
+      "Anti-skid rubber base stops enthusiastic dogs from sliding or tipping",
+      "Easy-grip ergonomic carry handle for quick refills without messy spills"
+    ]
   }
 ]
