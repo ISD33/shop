@@ -274,5 +274,28 @@
       "Smooth rear rolling wheels for effortless movement even when full",
       "Includes measuring food scoop & 2 airtight portable treat canisters"
     ]
+  },
+  {
+    "id": "dog-grooming-kit",
+    "title": "Quiet Dog & Cat Grooming Kit: Low-Noise Clippers with Paw Trimmer & Grinder",
+    "category": "pets",
+    "category_name": "🐶 Pets & Home",
+    "badge": "✂️ VIRAL PET GROOMER",
+    "badge_type": "hot",
+    "rating": 4.8,
+    "reviews": "6,240",
+    "price": "$34.99",
+    "original_price": "$42.99",
+    "discount": "19% OFF",
+    "is_featured": true,
+    "prime": true,
+    "image": "images/dog_grooming_kit.jpg",
+    "affiliate_url": "https://amzn.to/4AlwxpM",
+    "features": [
+      "Ultra-quiet whisper motor (<50dB) prevents pet fear & vibration anxiety",
+      "All-in-one grooming set: full body clippers, narrow paw trimmer & nail grinder",
+      "Cordless USB rechargeable with sleek organized desktop charging stand",
+      "Multiple interchangeable guide combs suitable for dogs, cats & all coat types"
+    ]
   }
 ]
