@@ -251,5 +251,28 @@
       "Anti-skid rubber base stops enthusiastic dogs from sliding or tipping",
       "Easy-grip ergonomic carry handle for quick refills without messy spills"
     ]
+  },
+  {
+    "id": "dog-food-container",
+    "title": "30-35 Lbs Collapsible Dog Food Storage Container with Wheels & Scoop",
+    "category": "pets",
+    "category_name": "🐶 Pets & Home",
+    "badge": "✨ SPACE SAVER MUST-HAVE",
+    "badge_type": "trending",
+    "rating": 4.8,
+    "reviews": "4,120",
+    "price": "$29.99",
+    "original_price": "$36.99",
+    "discount": "19% OFF",
+    "is_featured": true,
+    "prime": true,
+    "image": "images/dog_food_container.jpg",
+    "affiliate_url": "https://amzn.to/4hlEV0M",
+    "features": [
+      "Collapsible design holds 30-35 lbs unfolded, folds down to 10-13 lbs",
+      "Airtight silicone seal & 4 snap locks keep pet food crisp and moisture-free",
+      "Smooth rear rolling wheels for effortless movement even when full",
+      "Includes measuring food scoop & 2 airtight portable treat canisters"
+    ]
   }
 ]
