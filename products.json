@@ -297,5 +297,28 @@
       "Cordless USB rechargeable with sleek organized desktop charging stand",
       "Multiple interchangeable guide combs suitable for dogs, cats & all coat types"
     ]
+  },
+  {
+    "id": "ninja-crispi-mw101",
+    "title": "Ninja Crispi Microwave & Air Fryer with FusionCrisp (Silver MW101)",
+    "category": "kitchen",
+    "category_name": "☕ Kitchen & Cooking",
+    "badge": "🔥 2026 FLAGSHIP VIRAL",
+    "badge_type": "hot",
+    "rating": 4.9,
+    "reviews": "3,180",
+    "price": "$424.99",
+    "original_price": "$449.99",
+    "discount": "DEAL",
+    "is_featured": true,
+    "prime": true,
+    "image": "images/ninja_mw101.jpg",
+    "affiliate_url": "https://link.amazon/B07wgs35o",
+    "features": [
+      "FusionCrisp™ technology combines rapid microwave speed with golden air fry crunch",
+      "3-in-1 Smart Appliance: Air Fryer, Convection Crisper & Microwave in one unit",
+      "Replaces multiple bulky appliances, freeing up counter space in your kitchen",
+      "Extra large capacity easily fits a whole roast chicken or family-size meals"
+    ]
   }
 ]
