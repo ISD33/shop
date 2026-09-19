@@ -343,5 +343,28 @@
       "Sturdy anti-slip weighted base prevents aggressive eaters from tipping or sliding",
       "Includes 2 large rust-resistant stainless steel bowls for water and dry kibble"
     ]
+  },
+  {
+    "id": "neater-feeder-deluxe",
+    "title": "Neater Feeder Deluxe Mess-Proof Elevated Dog Bowls (Made in USA, 2 Heights)",
+    "category": "pets",
+    "category_name": "🐶 Pets & Home",
+    "badge": "🏆 #1 MESS-PROOF FEEDER",
+    "badge_type": "bestseller",
+    "rating": 4.7,
+    "reviews": "45,210",
+    "price": "$39.99",
+    "original_price": "$47.99",
+    "discount": "17% OFF",
+    "is_featured": true,
+    "prime": true,
+    "image": "images/neater_feeder.jpg",
+    "affiliate_url": "https://link.amazon/B082DIBw2",
+    "features": [
+      "100% Mess-Proof: spilled food stays in top basin, spilled water drains below",
+      "Protects hardwood floors and walls from food messes, splashes, and water stains",
+      "2 height options (10-inch and 12.5-inch) with easy snap-in leg extensions",
+      "Proudly Made in USA with BPA-free material and dishwasher-safe stainless steel bowls"
+    ]
   }
 ]
