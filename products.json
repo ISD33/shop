@@ -320,5 +320,28 @@
       "Replaces multiple bulky appliances, freeing up counter space in your kitchen",
       "Extra large capacity easily fits a whole roast chicken or family-size meals"
     ]
+  },
+  {
+    "id": "xiaz-elevated-dog-bowls",
+    "title": "XIAZ Elevated Dog Bowls for Large & Medium Dogs: 5 Heights Adjustable Stand",
+    "category": "pets",
+    "category_name": "🐶 Pets & Home",
+    "badge": "🐾 VET RECOMMENDED",
+    "badge_type": "trending",
+    "rating": 4.8,
+    "reviews": "4,820",
+    "price": "$34.99",
+    "original_price": "$42.99",
+    "discount": "19% OFF",
+    "is_featured": true,
+    "prime": true,
+    "image": "images/xiaz_dog_bowls.jpg",
+    "affiliate_url": "https://link.amazon/B0dshasst",
+    "features": [
+      "5 adjustable height settings (9, 11, 12, 14 inches) to fit dogs at every life stage",
+      "Ergonomic raised feeding reduces neck, spine and joint strain for easier swallowing",
+      "Sturdy anti-slip weighted base prevents aggressive eaters from tipping or sliding",
+      "Includes 2 large rust-resistant stainless steel bowls for water and dry kibble"
+    ]
   }
 ]
